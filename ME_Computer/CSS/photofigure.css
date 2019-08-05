@@ -1,0 +1,76 @@
+body{
+    background-image:-o-linear-gradient#336666,#66cccc;
+    margin-left:300px;
+    margin-top:50px;
+ 
+}
+h1{
+    margin-left:65px;
+    text-shadow:-1px 0 black, 0 1px red, 1px 0 black, 0 -1px white;
+    color:blue;
+    letter-spacing: 0.4em
+}
+h1:hover{
+    color:pink;
+}
+figure{
+    display:block;
+    width:230px;
+    height:200px;
+    padding:10px;
+  
+}
+figure img{
+    display:block;
+    width:200px;
+    height:180px;
+    
+    
+}
+figure img:hover{
+border:3px solid blue;
+width:210px;
+
+
+
+}
+figcaption{
+    text-align:center;
+}
+.entry{
+width:220px;
+float:left;
+margin: 10px;
+height:198px;
+
+
+}
+.wrap{
+    width:900px;
+    margin:0px,auto;
+}
+.head{
+margin:40px 0px 10px 50px;
+
+
+}
+#gradient{
+    background-image: -webkit-linear-gradient(white,pink);
+    
+  }
+
+ aside{
+   
+     float:right;
+     font-size: 20px;
+    
+     width:50px;
+     color:green;
+     line-height:30px;
+
+ }
+ aside section a:hover{
+     color:darkred;
+
+ }
+ 

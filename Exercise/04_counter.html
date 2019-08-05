@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let Increase = 0;
+            let Decrease=0;
+
+            function Incr() {
+                Increase++;
+                document.querySelector('#Increase').innerHTML = Increase;
+            }
+            function Dec() {
+                Decrease--;
+                document.querySelector('#Decrease').innerHTML = Decrease;
+            }
+
+            
+        </script>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1 id="Increase">0</h1>
+        <button onclick="Incr()">Click Here! ++</button>
+        <h1 id="Decrease">0</h1>
+        <button onclick="Dec()">Click Here! --</button>
+    </body>
+</html>

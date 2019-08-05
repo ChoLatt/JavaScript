@@ -1,0 +1,111 @@
+
+header, section, footer, aside, nav, article, figure, figcaption{
+    display:block;
+}
+
+figure{
+    float:left;
+    width:280px;
+    height:280px;
+    padding:5px;
+    margin:0 0  10px 10px; 
+    /* border:1px solid blue; */
+}
+figcaption{
+    font-size :90%;
+    text-align :center;
+    vertical-align:baseline;
+    color:white;
+}
+figure img{
+    width:250px;
+}
+section:Topic{
+    float:left;
+    width:800;
+    border-right:1px solid black;
+}
+header{
+    text-align:center;
+    
+    height:100px;
+     background-color:pink;
+}
+
+h1{
+   
+    text-align:center;
+    width:1200px;
+    margin:0px;
+    letter-spacing:.6em;
+    text-shadow: -1px -1px red;
+}
+
+h2{
+    font-size:28px;
+    text-align:center;
+    color:white;
+    text-shadow: -1px -1px black;
+
+}
+section.two,.three,.four{
+    float:left;
+    width:280px;
+    height:180px;
+    padding:5px;
+    margin:0 0  10px 10px; 
+}
+html{
+    background-image: url("Images/background.jpg");
+}
+
+body{
+   
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    
+    background-position:center;
+}
+.wrapper{
+    width:1200px;
+    margin:0px 0px 20px 100px;
+    padding:0px;
+    background-color:blue;
+}
+
+article{
+    clear:both;
+    overflow:auto;
+    width:100%;
+    }
+
+nav,footer{
+    clear:both;
+    color:red;
+    background-color:black;
+    height:30px;
+    text-align:center;
+  
+}
+nav ul{
+    margin:0px;
+    margin-left:30px;
+    padding: 5px 0px 5px 30px;
+}
+nav li{
+    display:inline;
+    margin-right:30px;
+    margin-left:40px;
+}
+nav li a{
+    color:white;
+
+}
+nav li a:hover, nav li a.current{
+    color:burlywood;
+}
+h3{
+    color:red;
+    text-shadow: -1px -1px black;
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<title>Chapter 07 Practice</title>
+	<style>
+		fieldset { width: 50em; 
+		}
+		form{
+			text-align:left;
+		}
+		body{
+			text-align:center;
+			line-height:35px;
+			color:blue;
+			background-color: bisque;
+		}
+	</style>
+<body>
+	<h1>Star Wars Droid Name Generator</h1>
+	<form id="swForm"> <!-- Where User info is collected -->
+	<fieldset>
+		<legend>About You</legend>
+		<label for="inFirst">First Name:</label>
+		<input type="text" placeholder="Joel" name="inFirst" id="inFirst" ><br>
+		<label for="inLast">Last Name:&nbsp </label>
+		<input type="text" placeholder="Hastak" name="inLast" id="inLast"><br>
+		<label for="inDOB">Birthday:&nbsp&nbsp&nbsp&nbsp </label>
+		<input type="date" name="inDOB" id="inDOB"><br>
+		<p>
+				<input type="button" value="Go" id="btnGo">
+				<input type="button" value="Clear" id="btnClear">
+			</p>
+	</fieldset>
+	
+	</form>
+	<div id="divShow"> <!-- Where ALL results are shown -->
+		<div id="errorMsg">&nbsp;</div>
+		<div id="nameYou">&nbsp;</div>
+		<div id="nameDroid">&nbsp;</div>
+		<div id="nameType">&nbsp;</div>
+		<div><img src="" id="droidPic"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+<!-- 
+    Name:           Cho Latt Thinn
+    Email:          ccholatt@gmail.com
+    Project:        Star Wars Droid Name Generator
+    Description:    DOM Manipulation
+    Date:           Aug 5, 2019
+-->
+</html>

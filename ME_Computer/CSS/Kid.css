@@ -1,0 +1,56 @@
+body{
+    background-color:wheat;
+    margin:0px;
+}
+header{
+    font-size:25px;
+    text-align:center;
+    color:blue;
+    text-shadow:3px 3px 2px red;
+    border-bottom:2px solid blue;
+}
+html{
+    width:100%;
+}
+img p:hover{
+    border:2px solid blue;
+    width:300px;
+
+}
+img#a{
+    width:40px;
+background-position:0px 0px;
+}
+aside{
+    float:right;
+    width:20%;
+}
+.kid{
+    padding:5px;
+    margin:5px;
+    margin-left:20px;
+    margin-top:10px;
+    background-color:blue;
+    float:left;
+    width:70%;
+    color:red;
+    font-size:20px;
+    text-align:center;
+    text-shadow:-1px -1px 0 black;
+
+}
+blockquote{
+    float:right;
+    font-size:19px;
+    font-style:italic;
+    margin:10px 10px 10px 10px;
+    padding:5px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    font-weight:bold;
+    text-align:center;
+   width:250px;
+    background-color:blue;
+    color:white;
+    
+    }

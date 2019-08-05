@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 04 Assignment4</title>
+</head>
+<body>
+    <h2>Original Band Members</h2>
+    <div id="divShowOriginalBand"></div>
+
+    <h2>New Band Members</h2>
+    <button id="btnMakeName">Make a name</button>
+    <div id="divShowNewBand"></div>
+
+    <script>
+        (function(){
+            "use strict";
+
+            // Arrays of Band Info
+            var names = ["Phyo Myat Aung", "Phyo Pyae Sone", "Wine Su Khine Thein", "Cherry Thinn"];
+           
+            var bandNames = ["Rock", "Punk", "Sweet-pop", "Pop"];
+            var ages = [23,28,27,19];
+           
+            console.log(ages);
+            var OriginalBandPerson = [];
+            // var randomBandPerson = [];
+
+            // Create Objects of the Divs on-screen
+            var elDivShowOriginalBand = document.getElementById("divShowOriginalBand");
+            var elDivShowNewBand = document.getElementById("divShowNewBand");
+
+            // Create an Object of the Button on-screen
+            var elBtnMakeName = document.getElementById("btnMakeName");
+
+            function BandMember(name, bandName, age) {
+                this.name   = name;
+                this.bandName   = bandName;
+                this.age        = age;
+
+                this.info = function() {
+                    var fullBandMemberInfo = this.name + " "+ " is " + 
+                    this.age + " years old, from " + this.bandName + ".";
+                    return fullBandMemberInfo;
+                }
+            } // End of BandMember() Object
+            for(var i in names) {
+                let OriginalBandPersonTmp = new BandMember(
+                    names[i],
+                    bandNames[i],
+                    ages[i],
+                );
+                
+                OriginalBandPerson.push(OriginalBandPersonTmp);
+                elDivShowOriginalBand.innerHTML += "<p>" + OriginalBandPerson[i].info() + "</p>";
+            } // End for Loop of creating a BandMember Object and store it in the Array
+
+            function fnGenerateNames() {
+                // console.log("clicked!");
+                // Makes a copy of an Array
+                var tmpNames = names.slice(0);
+                var tmpBandNames = bandNames.slice(0);
+                var tmpAges = ages.slice(0);
+                // var tmpLastNamesLength = tmpLastNames.length;
+
+                var randomBandPerson = [];
+                elDivShowNewBand.innerHTML = "";
+                for(var i in names) {
+                  
+                  let randomNames = Math.floor(Math.random() * tmpNames.length);
+                  let randomBandNames = Math.floor(Math.random() * tmpBandNames.length);
+                  let randomAges = Math.floor(Math.random() * tmpAges.length);
+
+                  let randomBandPersonTmp = new BandMember(
+                      
+                      tmpNames[randomNames],
+                      tmpBandNames[randomBandNames],
+                      tmpAges[randomAges],
+                  );
+                  
+                  // Splice to remove an item from an Array
+                
+                  tmpNames.splice(randomNames, 1);
+                  tmpBandNames.splice(randomBandNames, 1);
+                  tmpAges.splice(randomAges, 1);
+
+                  randomBandPerson.push(randomBandPersonTmp);
+
+                  elDivShowNewBand.innerHTML += "<p>" + randomBandPerson[i].info() + "</p>";
+              } // End for() Loop of generating random names
+
+          } // End fnGenerateNames()
+          
+          // Event Listener, to make the Button work.
+          elBtnMakeName.addEventListener("click", fnGenerateNames, false);         
+      }());
+
+</script>
+</body>
+ <!-- 
+        Name:           Cho Latt Thinn
+        Email:          ccholatt@gmail.com
+        Project:        Decisions & Loops
+        Description:    Look at iteration and looping construct
+        Date:           July 13, 2019 (Modified)
+    -->
+</html>

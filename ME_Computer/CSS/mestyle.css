@@ -1,0 +1,109 @@
+  body{
+      background-color:lavender;
+      margin-left:30px;
+  }
+p.photo{
+    margin-left:30px;
+}
+h1{
+    
+    color:blue;
+    font-size: 40px;
+    text-shadow:2px 2px 0px red;
+    text-align:center;
+    margin-right:100px;
+}
+h2{
+    margin-left:100px;
+    color:blue;
+    font-size:30px;
+    text-align:center;
+    margin-right:100px;
+}
+
+h3{
+    
+   color:Red;
+   text-shadow:-2px -2px 0px black;
+    padding:5px;
+    text-align:center;
+
+}
+li.noline{
+    display:inline;
+   letter-spacing:2px;
+   margin-left:90px;
+  
+  }
+ li{
+     text-align:left;
+ }
+.train, .sale, .service{
+    float:left;
+    width:350px;
+    color:blue;
+    background-color: royalblue;
+    border-left:1px solid white;
+    font-size:18px;
+    }
+    .special{
+        float:left;
+        width:49%;
+        font-size:19px;
+        color:blue;
+        background-color:tan;
+        text-align:center;
+        line-height:41px;
+        border:1px solid black;
+        
+        
+    }
+    .title{
+        color:red;
+        font-size:20px;
+        text-shadow:-1px 1px black;
+        line-height:35px;
+    }
+
+
+
+.trainphoto, .salephoto, .servicephoto{
+    float:left;
+    width:350px;
+
+}
+blockquote{
+float:right;
+font-size:19px;
+font-style:italic;
+margin:0px 10px 10px 5px;
+padding:5px;
+border-top:1px solid black;
+border-bottom:1px solid black;
+font-weight:bold;
+text-align:center;
+width:200px;
+background-color:blue;
+color:white;
+
+}
+blockquote i:hover{
+color:black;
+font-weight:normal;
+font-size:20px;
+
+}
+.des{
+    float:left;
+    width:100%;
+    clear:left;
+   
+    text-align:justify;
+}
+p.myanmar{
+    text-align:center;
+    font-size:20px;
+    color:blue;
+    line-height: 40px;
+    text-shadow:-1px -1px 0 black;
+}

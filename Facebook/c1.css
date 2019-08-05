@@ -1,0 +1,32 @@
+p{
+    color:white;
+
+    
+}
+
+
+h1{
+   color:white;
+    text-align:center;
+    background-color:black;
+    text-align:right;
+    letter-spacing:.6em;
+    text-shadow: -2px -2px 1px red;
+}
+body{
+   
+    margin:20px 0px 0px 0px;
+    padding:0px;
+    background-color: blue;
+    background-position:center;
+    text-align: center;
+}
+
+#timeline{
+    color:pink;
+    text-align: center;
+    font-weight: bold;
+    background-color: blue;
+}
+
+
