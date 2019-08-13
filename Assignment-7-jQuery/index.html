@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 07 Practice</title>
+<style>
+        fieldset { width: 20em; 
+        font-size: 20px;}
+     
+        .leftside,.rightside{
+            margin : auto;
+            float : left;
+            width : 48%; 
+            margin-left : 20px;
+            background-color :bisque;
+          
+             }
+       .leftside{
+        
+        color:blueviolet;
+       }
+        .rightside{
+             margin : 5px;
+            text-align : center;
+             
+            color  : blue;
+        }      
+           
+        .pp {
+            background-image: url('images/star.png');
+            background-position: right, center;
+            background-repeat: no-repeat;
+           }
+       p{
+           color : black;
+           font-size : 15px;
+            line-height: 20px;    
+             font-style: italic;
+   }
+         
+  body{
+    background-color: bisque;
+    
+  }
+        
+</style>
+</head>
+<body>
+ <div class="leftside">   
+     <h1 class="bullet">Star Wars Droid Name Generator</h1><br>
+    <form id="swForm">
+        <fieldset>
+            <legend>About You</legend><br><br>
+            <label  for="inFirst">First name: &nbsp &nbsp&nbsp</label>
+            <input type="text" placeholder="Joel" name="inFirst" id="inFirst"><br><br>
+            <label for="inLast">Last name:&nbsp &nbsp &nbsp </label>
+            <input type="text" placeholder="Hastak" name="inLast" id="inLast"><br><br>
+            <label for="inDOB">Birthday:&nbsp &nbsp &nbsp  &nbsp&nbsp </label>
+            <input type="date" name="inDOB" id="inDOB"><br><br>
+            <p><br><br>
+                <input type="button" value="Go" id="btnGo">
+                <input type="button" value="Clear" id="btnClear">
+            </p>
+            <p>NOTE-<br>Enter Form , Click Go button <br>
+            Show Right side<br>
+        Click on Right side text  <br>Clear button and then click..</p>
+        </fieldset>
+        
+</div>
+
+<div id="divShow" class="rightside">
+    <h2 id="answer">Star Wars Droid Animation</h2>
+        <h3>
+             <div id="divYou">&nbsp;</div>
+            <div  id="divDroid">&nbsp;</div>
+            <div id="divType">&nbsp;</div>
+            <div><img src="" id="droidPic"></div>
+        </h3>
+ </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<!-- 
+    Name:           Cho Latt
+    Email:          ccholatt@gmail.com
+    Project:        Star Wars Droid Name Generator
+    Description:    Using jQuery, create a program that lets a user become a Droid
+    Date:           Aug 12, 2019
+-->
+</html>
