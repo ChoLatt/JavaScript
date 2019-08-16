@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "location": "Royal Palace Mandalay",
+      "view": "Photo 1",
+      "image": "img/man-1.jpg"
+    },
+    {
+      "location": "Mandalay Hill",
+      "view": "Photo 2",
+      "image": "img/man-2.jpg"
+    },
+    {
+      "location": "Mandalay View",
+      "view": "Photo 3",
+      "image": "img/man-3.jpg"
+    }
+  ]
+}
