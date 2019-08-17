@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 1.5em;
+    width: 75%;
+    margin: auto;
+}
+header{
+    text-align:center;
+
+}
+
+#divTwoCol {
+    padding-top: 20px;
+    width: 100%;
+   
+}
+
+#divLeftCol {
+    float: left;
+    width: 50%;
+    text-align: left;
+    color: darkred;    
+}
+
+#divRightCol {
+    float: right;
+    width: 50%;
+    color: purple;
+}
