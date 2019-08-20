@@ -1,0 +1,76 @@
+body{
+    background-color:powderblue;
+     margin-top:50px;
+ 
+}
+h1{
+    margin-right:45px; 
+    text-shadow:-1px 0 black, 0 1px red, 1px 0 black, 0 -1px white;
+    color:green;
+    letter-spacing: 0.4em;
+    text-align: center;
+
+}
+h1:hover{
+    color:pink;
+}
+figure{
+    display:block;
+    width:220px;
+    height:200px;
+    padding:10px;
+    text-align:center;
+  
+}
+figure img{
+    display:block;
+    width:245px;
+    height:230px;
+   
+    
+    
+}
+figure img:hover{
+    border:3px solid blue;
+    border-radius: 10px;
+    width:220px;
+
+
+
+}
+
+.entry{
+    width:270px;
+    float:left;
+    margin: 10px;
+    height:250px;
+   
+
+
+}
+.wrap{
+    width:1200px;
+    margin:0px,auto;
+}
+.head{
+margin:40px 0px 10px 50px;
+
+
+}
+
+
+ aside{
+    margin-top:30px;
+     float:right;
+     font-size: 20px;
+    
+     width:150px;
+     color:green;
+     line-height:30px;
+
+ }
+ aside section a:hover{
+     color:darkred;
+
+ }
+ 
