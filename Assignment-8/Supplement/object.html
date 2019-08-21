@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON</title>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var JSONString = '[{ "firstName": "Todd", "lastName": "Grover", "gender": "Male", "salary": 50000 }, { "firstName": "John", "lastName": "Smith", "gender": "Male", "salary": 40000 },{ "firstName": "Todd", "lastName": "Grover", "gender": "Male", "salary": 50000 }]';
+           
+            var employeesJSON = JSON.parse(JSONString);
+            var result = '';
+
+               $.each(employeesJSON, function (i, item) {
+                result += '<b>First Name</b> = ' + item.firstName + '<br/>';
+                result += '<b>Last Name</b> = ' + item.lastName + '<br/>';
+                result += '<b>Gender</b> = ' + item.gender + '<br/>';
+                result += '<b>Salary</b> = ' + item.salary + '<br/><br/>';
+            });
+           
+            $('#resultDiv').html(result);
+           
+        });
+        $(function () {
+            var JSONString1 = '[{ "mya": 80, "eng": 91, "math": 87}, { "mya": 63, "eng": 52, "math": 64},{ "mya": 58, "eng": 62, "math": 74}]';
+           
+            var employeesJSON = JSON.parse(JSONString1);
+            var result = '';
+
+               $.each(employeesJSON, function (i, item) {
+                result += `<b>Myanmar</b> = <i> ${ item.mya } </i><br/>`;
+                result += `<b>English</b> =  <i>${ item.eng } </i><br/>`;
+                result += `<b>Mathematic</b> =  <i>${ item.math }</i><br/><br/>`;
+              
+            });
+           
+            $('#resultDiv1').html(result);
+           
+        });
+
+    </script>
+</head>
+<body style="font-family:Arial">
+    <h1>Students Record</h1>
+    <p id="resultDiv"></p>
+    <h1>Students Mark</h1>
+    <p id="resultDiv1"></p>
+</body>
+</html>
