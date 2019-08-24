@@ -1,0 +1,39 @@
+body {
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 1.5em;
+    width: 75%;
+    margin: auto;
+}
+
+#divTwoCol {
+    width: 1000px;
+}
+
+#divLeftCol {
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: red;    
+}
+
+#divRightCol {
+    float: left;
+    width: 50%;
+    
+    text-align:left;
+    color: blue;
+    text-indent:10px;
+}
+h2{
+    font-size:25px;
+}
+img{
+    width:330px;
+}
+p{
+    color:darkred;
+    text-align:center;
+}
+b{
+    text-decoration:underline;;
+}
