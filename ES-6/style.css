@@ -1,21 +1,33 @@
 body{
     margin:0px;
-  
+    padding:0px;
     width:100%;
     color:blue;
     background-color:white;;
     text-align:center;
-  
-    
-    
+ 
+}
+
+h2{
+    padding:0px;
+    margin:0px;
+    color:black;
 }
 header{
    line-height:60px;
+   margin:0px;
+   padding:0px;
     height:200px;
     width:100%;
     height:130px;
     border-bottom: rosybrown 3px solid;
-    background-color:yellow;
+    background-color:pink;
+}
+#template{
+    background-color:darkgray;
+    margin:0px;
+    
+    padding:0px;
 }
 h1#heading{
     margin:0;
