@@ -31,7 +31,7 @@ function getData(method, url){
         xhr.send();
     });
 }
-getData("GET","http://jsonplaceholder.typicode.com/todos").then(function(data){
+getData("GET",'data.json').then(function(data){
     let todos = JSON.parse(data);
     let output="";
     for(let todo of todos){
